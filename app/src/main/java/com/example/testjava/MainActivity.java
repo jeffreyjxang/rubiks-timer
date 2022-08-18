@@ -58,8 +58,8 @@ public class MainActivity extends AppCompatActivity {
     // if it's about to be destroyed.
     @Override
     public void onSaveInstanceState(
-            Bundle savedInstanceState)
-    {
+            Bundle savedInstanceState) {
+        super.onSaveInstanceState(savedInstanceState);
         savedInstanceState
                 .putInt("milliseconds", milliseconds);
         savedInstanceState
